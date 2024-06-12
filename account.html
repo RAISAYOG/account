@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up Modal</title>
+    <link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+    <button id="toggleButton">Trade</button>
+    
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <ul>
+                <li>Account Type</li>
+                <select id="accountType">
+                    <option value="real">Real Account</option>
+                    <option value="demo">Demo Account</option>
+                   
+                </select>
+                <li>Delivery Time</li>
+                <select id="deliveryTime">
+                    <option value="60s">60S</option>
+                    <option value="120s">120S</option>
+                    <option value="12h">12H</option>
+                    <option value="36h">36H</option>
+                    <option value="7d">7D</option>
+                </select>
+                <button id="upButton" class="color-toggle">Up</button>
+                <button id="downButton" class="color-toggle">Down</button>
+
+                 <li>Price Range</li>
+                <select id="priceRange">
+                    <option value="10%">10%</option>
+                    <option value="35%">35%</option>
+                    <option value="87%">87%</option>
+                    <option value="215%">215%</option>
+                    <option value="315%">315%</option>
+                </select>
+                
+                
+                
+                <button id="deselectButton">Deselect Options</button>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/account.js"></script>
+</body>
+</html>
